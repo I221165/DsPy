@@ -17,6 +17,9 @@ Run order:  read README.md first (get a free Groq key), then run this file.
 
 import os
 import dspy
+from dotenv import load_dotenv
+
+load_dotenv()  # reads keys from the .env file in this folder
 
 
 # ===========================================================================

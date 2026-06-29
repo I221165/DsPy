@@ -7,7 +7,14 @@ This is also good practice for a real GitHub repo.
 """
 
 import os
+from pathlib import Path
 import dspy
+from dotenv import load_dotenv
+
+# Load keys from the .env file in the project root (one level up from /projects).
+# This runs as soon as ANY project does `from config import setup_groq`, so your
+# keys are available everywhere without typing them in each PowerShell window.
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 
 def setup_groq(model: str = "groq/llama-3.3-70b-versatile"):

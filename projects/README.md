@@ -1,13 +1,23 @@
 # DSPy Projects
 
-Four small, runnable DSPy projects (wired to Groq), from simplest to most
+Small, runnable DSPy projects (wired to Groq), from simplest to most
 real-world. Each file is heavily commented — read it top to bottom as you run it.
 
-## Setup (once per terminal)
+## Setup (do this once)
+
+Put your keys in a `.env` file in the project root (`f:\DSpy\.env`) — they then
+load automatically for every project, no retyping per terminal:
+
+```
+GROQ_API_KEY=gsk_your_real_key_here
+LANGFUSE_PUBLIC_KEY=pk-...   # only for project 9
+LANGFUSE_SECRET_KEY=sk-...   # only for project 9
+```
+
+(Copy `.env.example` to `.env` and fill it in. The real `.env` is git-ignored,
+so your keys stay private.) Then:
 
 ```powershell
-# from the f:\DSpy folder
-$env:GROQ_API_KEY = "gsk_your_real_key_here"
 cd projects
 ```
 
