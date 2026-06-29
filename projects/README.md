@@ -23,6 +23,7 @@ cd projects
 | [project_6_agent_tools.py](project_6_agent_tools.py) | First real **agent** | `dspy.ReAct` — reason → use a tool → repeat |
 | [project_7_research_agent.py](project_7_research_agent.py) | Research agent | agent uses a **real web tool** (live Wikipedia) |
 | [project_8_multi_agent.py](project_8_multi_agent.py) | Multi-agent team | researcher + writer + critic collaborating |
+| [project_9_observability.py](project_9_observability.py) | See inside your agents | **Langfuse** dashboard — traces every step, tool call, cost |
 
 ## Run them
 
@@ -35,7 +36,23 @@ python project_5_rag_chroma.py   # first run downloads a small embedding model (
 python project_6_agent_tools.py
 python project_7_research_agent.py
 python project_8_multi_agent.py
+python project_9_observability.py   # needs free Langfuse keys (see below)
 ```
+
+## Langfuse setup (only needed for project 9)
+
+1. Sign up free at **https://cloud.langfuse.com** (no card).
+2. Create a project → copy the **Public Key** (`pk-...`) and **Secret Key** (`sk-...`).
+3. Set them in PowerShell (same window you run the project in):
+
+```powershell
+$env:LANGFUSE_PUBLIC_KEY = "pk-..."
+$env:LANGFUSE_SECRET_KEY = "sk-..."
+# only if you signed up on the US server:
+# $env:LANGFUSE_HOST = "https://us.cloud.langfuse.com"
+```
+
+Run the project, then open the dashboard → **Tracing** to see every step.
 
 ## Pipelines vs Agents
 
