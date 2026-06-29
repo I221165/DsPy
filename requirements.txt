@@ -4,3 +4,4 @@ python-dotenv>=1.0.0   # loads your keys from the .env file
 chromadb>=1.0.13   # vector database, used by project_5_rag_chroma.py
 langfuse>=4.12.0   # observability dashboard, used by project_9_observability.py
 openinference-instrumentation-dspy>=0.1.37   # connects DSPy traces to Langfuse
+ddgs>=9.14.4   # live web search, used by project_10_web_search_agent.py

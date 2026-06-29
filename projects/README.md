@@ -34,6 +34,7 @@ cd projects
 | [project_7_research_agent.py](project_7_research_agent.py) | Research agent | agent uses a **real web tool** (live Wikipedia) |
 | [project_8_multi_agent.py](project_8_multi_agent.py) | Multi-agent team | researcher + writer + critic collaborating |
 | [project_9_observability.py](project_9_observability.py) | See inside your agents | **Langfuse** dashboard — traces every step, tool call, cost |
+| [project_10_web_search_agent.py](project_10_web_search_agent.py) | Live web search agent | **DuckDuckGo** — agent browses the live internet (no key) |
 
 ## Run them
 
@@ -47,6 +48,7 @@ python project_6_agent_tools.py
 python project_7_research_agent.py
 python project_8_multi_agent.py
 python project_9_observability.py   # needs free Langfuse keys (see below)
+python project_10_web_search_agent.py   # live web search, no key needed
 ```
 
 ## Langfuse setup (only needed for project 9)
