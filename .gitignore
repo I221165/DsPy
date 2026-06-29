@@ -1,0 +1,23 @@
+# ── SECRETS — never upload these ──────────────────────────────────────────
+.env
+*.key
+secrets.*
+
+# ── Python junk ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ── DSPy / LLM caches ──────────────────────────────────────────────────────
+.dspy_cache/
+*.log
+
+# ── Editor / OS junk ───────────────────────────────────────────────────────
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
